@@ -63,11 +63,12 @@ The star schema optimized for queries on song play analysis includes the tables 
 
 Staging tables are permanent tables used to store temporary data before transferring to another permanent table. This seemly intermediate process helps to process data from externa sources before transferring them to the database tables.  Some of the immediate benefits of staging tables includes data cleansing, computing values based on source data, re-shaping and/or re-distributing source data layout to one that matches the needs of a data warehouse.
 
-Advantages of Staging Data
-•    Baseline: the staging tables provides buffer that isolates the warehouse from the source systems, and when warehouse processing is interrupted and has to be restarted.
-•    Traceability: the data sources develop based on operational needs. The staging tables capture source data at the time of each extract and permit strict traceability from user analytics back through to source data.
-•    Agility: staging allows developers to use SQL to access staging data and test different warehouse structures. While simple SQL codes can be left in place, complex SQL codes added into the ETL process, thereby providing agility in the warehouse development.
-•    Warehouse evolution: developers can reprocess warehouse data upon restructuring and during agile development
+Advantages of Staging Tables
+
+* Baseline: the staging tables provides buffer that isolates the warehouse from the source systems, and when warehouse processing is interrupted and has to be restarted.
+* Traceability: the data sources develop based on operational needs. The staging tables capture source data at the time of each extract and permit strict traceability from user analytics back through to source data.
+* Agility: staging allows developers to use SQL to access staging data and test different warehouse structures. While simple SQL codes can be left in place, complex SQL codes added into the ETL process, thereby providing agility in the warehouse development.
+* Warehouse evolution: developers can reprocess warehouse data upon restructuring and during agile development
 * [Dataversity](https://www.dataversity.net/data-warehouses-stage-source-data/#:~:text=Staging%20tables%20provide%20a%20buffer,data%20from%20their%20operational%20counterparts.)
 
 In this project, two staging tables are provided below:
